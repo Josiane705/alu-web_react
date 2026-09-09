@@ -1,0 +1,5 @@
+nohup: ignoring input
+asset main.js 76.9 KiB [emitted] [minimized] (name: main) 1 related asset
+orphan modules 250 KiB [orphan] 1 module
+./src/index.js + 1 modules 250 KiB [built] [code generated]
+webpack 5.110.3 compiled successfully in 52409 ms
