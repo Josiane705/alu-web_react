@@ -10,24 +10,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
         use: [
+          'file-loader',
           {
             loader: 'image-webpack-loader',
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65,
-              },
+              bypassOnDebug: true,
+              disable: true,
             },
           },
         ],
       },
     ],
+  },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
   },
 };
