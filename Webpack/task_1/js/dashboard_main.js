@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { debounce } from 'lodash';
+import _ from 'lodash';
 
 $(document).ready(() => {
   $('body').append('<p>Holberton Dashboard</p>');
@@ -15,5 +15,5 @@ $(document).ready(() => {
     $('#count').text(`${count} clicks on the button`);
   }
 
-  $('#get-started').on('click', debounce(updateCounter, 300));
+  $('#get-started').on('click', _.debounce(updateCounter, 300));
 });
