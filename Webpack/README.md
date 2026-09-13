@@ -1,17 +1,11 @@
-# Webpack - Task 0
+# Webpack
 
-This project is an introduction to using Webpack to bundle JavaScript files.
+## Description:
 
-## Project Structure
+Prepare yourself, Webpack is coming!
 
-- `src/index.js` - Main JavaScript file
-- `dist/index.html` - HTML file
-- `package.json` - Project dependencies and scripts
-- `webpack.log` - Webpack output/log information
-
-## Installation
-
-Install the project dependencies with:
-
-```bash
-npm install
+- How to setup Webpack for a basic project
+- Entry points, output, and loaders
+- How to add plugins
+- How to split your code into chunks
+- How to setup a dev server
